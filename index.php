@@ -31,6 +31,7 @@ $monsters = $monsterLoader->getMonsters();
         <div class="col-md-6 offset-md-3">
             <h1 class="page-header">This is a game of top trumps made with PHP</h1>
 
+            <table class="table-striped table">
             <?php foreach ($monsters as $monster): ?>
                 <tr>
                     <td><?php echo $monster->getName(); ?></td>
@@ -40,6 +41,7 @@ $monsters = $monsterLoader->getMonsters();
                     <td><?php echo $monster->getHorrorRating(); ?></td>
                 </tr>
             <?php endforeach; ?>
+            </table>
         </div>
     </div>
 </div>
